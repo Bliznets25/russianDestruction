@@ -1,0 +1,35 @@
+.listItem {
+  width: 310px;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+  -23px 0 20px -23px rgba(0, 0, 0, .6),
+  23px 0 20px -23px rgba(0, 0, 0, .6),
+  inset 0 0 40px rgba(0, 0, 0, .1);
+
+  &__img {
+    width: 90%;
+    height: 85px;
+    margin-top: 5px;
+  }
+
+  &__title {
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__count {
+    color: red;
+  }
+  
+  &__increaseTitle {
+    margin-bottom: 0;
+  }
+}
+
