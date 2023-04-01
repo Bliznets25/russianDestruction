@@ -2,11 +2,23 @@ import './App.css';
 import Header from "./components/header/Header";
 import List from "./components/list/List";
 import useAxios from "./customHook/useAxios";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 function App() {
 
-    const [background, setBackground] = useState(true);
+    const [background, setBackground] = useState(JSON.parse(localStorage.getItem('background')) || false );
+
+    useEffect(() => {
+     localStorage.setItem('background', JSON.stringify(background))
+    }, [background]);
+
+    useEffect(() => {
+    const savedBackground = JSON.parse(localStorage.getItem('background'))
+        if (savedBackground) {
+            setBackground(savedBackground)
+        }
+    }, []);
+
 
     const [data1, data2] = useAxios('https://russianwarship.rip/api/v2/terms/ua', 'https://russianwarship.rip/api/v2/statistics/latest');
     const mergetData = Object.entries(data1?.data || {}).map(([key, value]) => {
