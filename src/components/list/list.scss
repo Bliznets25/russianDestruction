@@ -10,3 +10,11 @@
         flex-wrap: wrap;
     }
 }
+
+@media (max-width: 1000px) {
+    .list {
+       &__items {
+           justify-content: center;
+       }
+    }
+}
