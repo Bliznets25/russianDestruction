@@ -1,7 +1,15 @@
 .App {
   text-align: center;
-  background-image: url("https://tverezo.info/wp-content/uploads/2022/10/moskva-pozhar.jpg");
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/054/116/921/large/petr-muravey-kremlin-lights.jpg?1663788705");
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.App2 {
+  text-align: center;
+  background-image: url("https://www.wric.com/wp-content/uploads/sites/74/2022/02/AP22044533180759-1.jpg?w=2560&h=1440&crop=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
