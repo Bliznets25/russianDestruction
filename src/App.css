@@ -8,8 +8,26 @@
 .App2 {
   text-align: center;
   background-image: url("https://www.wric.com/wp-content/uploads/sites/74/2022/02/AP22044533180759-1.jpg?w=2560&h=1440&crop=1");
+  /* What will happen if someone will delete the photo on that site. Better to save files like these locally */
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+/*
+  text-align, background-size, background-repeat are the same for both classes.
+  I recommed creating a new class for these properties.
 
+  .background {
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .ua-bg {
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/054/116/921/large/petr-muravey-kremlin-lights.jpg?1663788705");
+  }
+
+  .ru-bg {
+    background-image: url("https://www.wric.com/wp-content/uploads/sites/74/2022/02/AP22044533180759-1.jpg?w=2560&h=1440&crop=1");
+  }
+*/

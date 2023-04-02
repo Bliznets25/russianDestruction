@@ -15,7 +15,8 @@ function List({mergetData}) {
     //         icon: value.icon, //icon
     //         increase: increase //plus daily destruction
     //     }
-    // })
+    // }) // don't forget to remove comments :)
+    
     const list = {
         hidden: { opacity: 1, scale: 0 },
         visible: {
